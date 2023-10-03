@@ -30,9 +30,7 @@ mutate(across(where(is.character), as.factor))
 
 # Meathods
 
-## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
-
-
+Looking at the data using glimpse() we can see that Alcohol is a continuous numerical and seat is a regular categorical. This problem is a numerical categorical comparison so we will use the NumCat helper file. We will also use the mytricks to factor the categorical data useing dyplr. We will show our graphical results using ggplot2, numerical with favstats, and run inferential tests with an anova becuase we have more than two catagories and then a TukeyHSD to find where the differences are in ourt data.
 
 # Results
 
