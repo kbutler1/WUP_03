@@ -59,7 +59,7 @@ favstats(alcohol~Seat,data=davisdata)
 
 The median and mean of the back seats is substantially higher in the back seat class, far beyond what we would expect to see from random variations, the sample has n > 30 as well so wo would not expect large variations like what is scene here.
 
-The $\sigma$ is also substantially larger in the back seats as well, more than double the other two catagories.
+The $\sigma$ is also substantially larger in the back seats as well, more than double the other two categories.
 
 ## Inferential Tests
 
@@ -68,10 +68,15 @@ model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
 
+We see here that there is a significant difference somewhere in the data, p = 0.000116 (<0.05).
+
 ```{r}
 plot(TukeyHSD(model1,conf.level = 0.99))
 ```
 
+We see here in the TukeyHSD the only similar categories are the Middle and Front. The back differs strongly with front and the middle and we can say with a 99% confidence that there is a correlation between Alcohol and Seat.
+
 ## Conclusions
+
 
 
