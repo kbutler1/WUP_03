@@ -16,6 +16,12 @@ davisdata <- read.csv(file="UCDavis.csv")
 ```
 # Introduction
 
+We will be looking into the DavisData data set that is included with tidyverse to see if there is and correlation between alcohol consumption and the chosen seat.  
+
+$H_0$ There is no difference in the data between alcohol and seat.
+
+$H_A$ There is difference in the data between alcohol and seat.
+
 ```{r}
 glimpse(davisdata)
 davisdata <- davisdata %>%
@@ -25,6 +31,8 @@ mutate(across(where(is.character), as.factor))
 # Meathods
 
 ## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
+
+
 
 # Results
 
