@@ -57,6 +57,10 @@ We can also see that the middle is slightly higher than the front with a higher 
 favstats(alcohol~Seat,data=davisdata)
 ```
 
+The median and mean of the back seats is substantially higher in the back seat class, far beyond what we would expect to see from random variations, the sample has n > 30 as well so wo would not expect large variations like what is scene here.
+
+The $\sigma$ is also substantially larger in the back seats as well, more than double the other two catagories.
+
 ## Inferential Tests
 
 ``` {r include = TRUE, echo = FALSE}
