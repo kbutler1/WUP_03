@@ -51,7 +51,7 @@ We see here that the back seats dispropirtionatly consume more alcohol than the 
 We can also see that the middle is slightly higher than the front with a higher median and has more outliers. If this were a more robust assessment we would likely see that front and middle are more similar.
 
 
-### Numerical Summarys 
+### Numerical Summaries 
 
 ``` {r include = TRUE, echo = FALSE}
 favstats(alcohol~Seat,data=davisdata)
