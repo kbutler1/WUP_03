@@ -40,11 +40,11 @@ theme (plot.title = element_text(hjust = 0.5, size = 16) )
 
 ### Numerical Summarys 
 
-``` {r include = TRUE, echo = FALSE}
-favstats(alcohol~Seat,data=davisdata)
-```
+
 
 ## Inferential Tests
+
+
 
 ## Conclusions
 
