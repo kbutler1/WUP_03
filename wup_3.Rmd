@@ -18,6 +18,8 @@ davisdata <- read.csv(file="UCDavis.csv")
 
 ```{r}
 glimpse(davisdata)
+davisdata <- davisdata %>%
+mutate(across(where(is.character), as.factor))
 ```
 
 # Meathods
@@ -40,11 +42,20 @@ theme (plot.title = element_text(hjust = 0.5, size = 16) )
 
 ### Numerical Summarys 
 
-
+``` {r include = TRUE, echo = FALSE}
+favstats(alcohol~Seat,data=davisdata)
+```
 
 ## Inferential Tests
 
+``` {r include = TRUE, echo = FALSE}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
 
+```{r}
+plot(TukeyHSD(model1,conf.level = 0.99))
+```
 
 ## Conclusions
 
