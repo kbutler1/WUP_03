@@ -40,10 +40,10 @@ Looking at the data using glimpse() we can see that Alcohol is a continuous nume
 
 ``` {r include = TRUE, echo = FALSE}
 ggplot(data = davisdata, aes(x = Seat, y = alcohol) ) +
-geom_boxplot (notch=FALSE,outlier.colour = "red",outlier.size = 2, fill = "darkgray") +
-stat_boxplot (geom ='errorbar') +
-labs (x = "Seat", y = "Alcohol Consumed", title = "Alcohol vs Seat Choice") +
-theme (plot.title = element_text(hjust = 0.5, size = 16) )
+  geom_boxplot (notch=FALSE,outlier.colour = "red",outlier.size = 2, fill = "darkgray") +
+  stat_boxplot (geom ='errorbar') +
+  labs (x = "Seat", y = "Alcohol Consumed", title = "Alcohol vs Seat Choice") +
+  theme (plot.title = element_text(hjust = 0.5, size = 16) )
 ```
 
 We see here that the back seats dispropirtionatly consume more alcohol than the front and middle. The median of the back seats is almost at the Q4 measure in the front seats. Additionally the IQR of back seats is above the median of both the front and middle seats.
