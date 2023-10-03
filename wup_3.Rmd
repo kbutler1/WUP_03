@@ -78,5 +78,5 @@ We see here in the TukeyHSD the only similar categories are the Middle and Front
 
 ## Conclusions
 
-
+We see here from multiple measures that the back seats disproportionately consume more alcohol than the other categories. The graphical, numerical, and inferential results show a strong difference in the data when comparing the categories. We can say that with a 99% level of confidence that there is a correlation in the data. We would need to review the data collection methods to ensure that this is not collected with a convenience sample that that there is no sollection bias such as non-response bias. 
 
