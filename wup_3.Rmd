@@ -46,6 +46,11 @@ labs (x = "Seat", y = "Alcohol Consumed", title = "Alcohol vs Seat Choice") +
 theme (plot.title = element_text(hjust = 0.5, size = 16) )
 ```
 
+We see here that the back seats dispropirtionatly consume more alcohol than the front and middle. The median of the back seats is almost at the Q4 measure in the front seats. Additionally the IQR of back seats is above the median of both the front and middle seats.
+
+We can also see that the middle is slightly higher than the front with a higher median and has more outliers. If this were a more robust assessment we would likely see that front and middle are more similar.
+
+
 ### Numerical Summarys 
 
 ``` {r include = TRUE, echo = FALSE}
