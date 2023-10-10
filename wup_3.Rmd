@@ -1,6 +1,6 @@
 ---
 title: "Alcohol vs Seat choice"
-author: "Ezra Licciardi"
+author: "Kiara Butler"
 date: "Fall 2023"
 output: html_document
 ---
