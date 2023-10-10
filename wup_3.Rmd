@@ -20,7 +20,7 @@ We will be looking into the DavisData data set that is included with tidyverse t
 
 $H_0$ There is no difference in the data between alcohol and seat.
 
-$H_A$ There is difference in the data between alcohol and seat.
+$H_A$ There is difference in the data between alcohol and seat. 
 
 ```{r}
 glimpse(davisdata)
